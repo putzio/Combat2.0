@@ -1,0 +1,9 @@
+Manufacturer=Alpha & Omega Semiconductors
+PartNumber=AO4406AL
+PartCategory=MOSFET (N-Channel)
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2019-09-16 09:17:17
+Downloaded=2023-03-17 10:59:37
+3D=Y

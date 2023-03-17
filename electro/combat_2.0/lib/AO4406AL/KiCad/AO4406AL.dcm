@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AO4406AL
+D N-Channel 30V 13A (Tc) 3.1W (Tc) Surface Mount 8-SOIC
+K
+F https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO4406AL_C35349.pdf
+$ENDCMP
+#
+#End Doc Library

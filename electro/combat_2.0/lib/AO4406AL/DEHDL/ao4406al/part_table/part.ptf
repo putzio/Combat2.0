@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AO4406AL'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Alpha & Omega Semiconductors", "AO4406AL" (!) = "", "SOIC127P600X175-8N", "Small Outline Packages", "", "", "", "", "N-Channel 30V 13A (Tc) 3.1W (Tc) Surface Mount 8-SOIC", "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO4406AL_C35349.pdf", "1.75 mm"
+END_PART
+
+END.
