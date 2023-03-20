@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2902YDT
+D LM2902YDT, Quad Operational Amplifier 1.3MHz 5 to 28V, 14-Pin SO
+K
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000533.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,182 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LM2902YDT"
+   (description "LM2902YDT, Quad Operational Amplifier 1.3MHz 5 to 28V, 14-Pin SO")
+   (family "ANA")
+   (package "SOIC127P600X175-14N")
+   (attribute "Datasheet Link" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000533.pdf")
+   (attribute "Geometry.Height" "1.75mm")
+   (attribute "Manufacturer_Name" "STMicroelectronics")
+   (attribute "Manufacturer_Part_Number" "LM2902YDT")
+   (attribute "Mouser Part Number" "511-LM2902YDT")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LM2902YDT?qs=5J552fbOmorZuJVYgEuIbQ%3D%3D")
+   (attribute "Arrow Part Number" "LM2902YDT")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/lm2902ydt/stmicroelectronics?region=nac")
+   (gate
+    (symbol "LM2902YDT")
+    (pin "OUTPUT_1" 1 PS)
+    (pin "INVERTING_INPUT_1" 2 PS)
+    (pin "NON-INVERTING_INPUT_1" 3 PS)
+    (pin "VCC_+" 4 PS)
+    (pin "NON-INVERTING_INPUT_2" 5 PS)
+    (pin "INVERTING_INPUT_2" 6 PS)
+    (pin "OUTPUT_2" 7 PS)
+    (pin "OUTPUT_4" 14 PS)
+    (pin "INVERTING_INPUT_4" 13 PS)
+    (pin "NON-INVERTING_INPUT_4" 12 PS)
+    (pin "VCC_-" 11 PS)
+    (pin "NON-INVERTING_INPUT_3" 10 PS)
+    (pin "INVERTING_INPUT_3" 9 PS)
+    (pin "OUTPUT_3" 8 PS)
+   )
+  )
+  (symbol "LM2902YDT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 2600 100) (pt 2600 -700) (pt 200 -700) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2800 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOIC127P600X175-14N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.725 4.625)
+      (pt 3.725 4.625)
+      (pt 3.725 -4.625)
+      (pt -3.725 -4.625)
+      (pt -3.725 4.625))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.95 4.325)
+      (pt 1.95 4.325)
+      (pt 1.95 -4.325)
+      (pt -1.95 -4.325)
+      (pt -1.95 4.325))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.95 3.055)
+      (pt -0.68 4.325))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.6 4.325)
+      (pt 1.6 4.325)
+      (pt 1.6 -4.325)
+      (pt -1.6 -4.325)
+      (pt -1.6 4.325))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.475 4.51)
+      (pt -1.95 4.51))))
+   (leg 1 (pt -2.712 3.81) (padstack 0))
+   (leg 2 (pt -2.712 2.54) (padstack 0))
+   (leg 3 (pt -2.712 1.27) (padstack 0))
+   (leg 4 (pt -2.712 0) (padstack 0))
+   (leg 5 (pt -2.712 -1.27) (padstack 0))
+   (leg 6 (pt -2.712 -2.54) (padstack 0))
+   (leg 7 (pt -2.712 -3.81) (padstack 0))
+   (leg 8 (pt 2.712 -3.81) (padstack 0))
+   (leg 9 (pt 2.712 -2.54) (padstack 0))
+   (leg 10 (pt 2.712 -1.27) (padstack 0))
+   (leg 11 (pt 2.712 0) (padstack 0))
+   (leg 12 (pt 2.712 1.27) (padstack 0))
+   (leg 13 (pt 2.712 2.54) (padstack 0))
+   (leg 14 (pt 2.712 3.81) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.525 0 0 0))
+   )
+   (model "LM2902YDT.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

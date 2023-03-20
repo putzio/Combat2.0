@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "LM2902YDT"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-12-15-06:53:29)
+    (mountForm default
+        (footprintRef "SOIC127P600X175-14N")
+        (spec "System")
+    )
+)

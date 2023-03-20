@@ -1,0 +1,18 @@
+.LM2902YDT :1 ;LM2902YDT, Quad Operational Amplifier 1.3MHz 5 to 28V, 14-Pin SO
+SOIC127P600X175-14N
+*STM IC
+*NGS
+*PLB 1="OUTPUT 1" 2="INVERTING INPUT 1" 3="NON-INVERTING INPUT 1" 4="VCC +" 5="NON-INVERTING INPUT 2" 6="INVERTING INPUT 2" 7="OUTPUT 2" 8="OUTPUT 3" 9="INVERTING INPUT 3" 10="NON-INVERTING INPUT 3" 11="VCC -" 12="NON-INVERTING INPUT 4" 13="INVERTING INPUT 4" 14="OUTPUT 4"
+*MXP 14
+*DFN LM2902YDT
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (LM2902YDT)
+~!Mouser Part Number (511-LM2902YDT)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LM2902YDT?qs=5J552fbOmorZuJVYgEuIbQ%3D%3D)
+~!Arrow Part Number (LM2902YDT)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/lm2902ydt/stmicroelectronics?region=nac)
+~!Link Datasheet (http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000533.pdf)
+~!Height (1.75mm)
+~!3D_Model (LM2902YDT)
+LM2902YDT
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

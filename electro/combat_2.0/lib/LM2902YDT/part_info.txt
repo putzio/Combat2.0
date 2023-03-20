@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=LM2902YDT
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=3.1
+Released=2015-04-13 16:52:51
+Downloaded=2023-03-18 19:39:09
+3D=Y

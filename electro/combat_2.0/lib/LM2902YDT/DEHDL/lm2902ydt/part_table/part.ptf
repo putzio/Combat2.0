@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LM2902YDT'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "LM2902YDT" (!) = "", "SOIC127P600X175-14N", "Small Outline Packages", "511-LM2902YDT", "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LM2902YDT?qs=5J552fbOmorZuJVYgEuIbQ%3D%3D", "LM2902YDT", "https://www.arrow.com/en/products/lm2902ydt/stmicroelectronics?region=nac", "LM2902YDT, Quad Operational Amplifier 1.3MHz 5 to 28V, 14-Pin SO", "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000533.pdf", "1.75 mm"
+END_PART
+
+END.
