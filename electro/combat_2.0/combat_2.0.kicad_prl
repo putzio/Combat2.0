@@ -73,6 +73,19 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "combat_2.0.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 960,
+          "pos_y": 27,
+          "size_x": 960,
+          "size_y": 1053
+        }
+      }
+    ]
   }
 }
