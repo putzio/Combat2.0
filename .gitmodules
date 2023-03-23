@@ -1,3 +1,6 @@
 [submodule "electro/combat_2.0/lib/kicad-ESP8266"]
 	path = electro/combat_2.0/lib/kicad-ESP8266
 	url = git@github.com:jdunmire/kicad-ESP8266.git
+[submodule "electro/combat_2.0/lib/kicad-esp32"]
+	path = electro/combat_2.0/lib/kicad-esp32
+	url = https://github.com/espressif/kicad-libraries
