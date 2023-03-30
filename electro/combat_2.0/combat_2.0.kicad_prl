@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 37,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -75,6 +75,18 @@
   "project": {
     "files": [
       {
+        "name": "combat_2.0.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 114,
+          "size_x": 960,
+          "size_y": 789
+        }
+      },
+      {
         "name": "combat_2.0.kicad_pcb",
         "open": false,
         "window": {
@@ -83,19 +95,7 @@
           "pos_x": 0,
           "pos_y": 27,
           "size_x": 1938,
-          "size_y": 1098
-        }
-      },
-      {
-        "name": "combat_2.0.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 960,
-          "pos_y": 27,
-          "size_x": 960,
-          "size_y": 1053
+          "size_y": 921
         }
       }
     ]

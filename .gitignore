@@ -6,6 +6,8 @@
 _autosave*
 \#auto_saved_files\#
 
+*.pdf
+
 
 # Temporary files
 *.000
