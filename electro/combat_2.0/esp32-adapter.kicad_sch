@@ -630,7 +630,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x09_Odd_Even") (at 160.02 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0557ffba-5476-461c-8f05-50c8fe197683)
-    (property "Reference" "J6" (at 161.29 46.99 0)
+    (property "Reference" "J14" (at 161.29 46.99 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_02x09_Odd_Even" (at 161.29 49.53 0)
@@ -663,7 +663,7 @@
     (instances
       (project "combat_2.0"
         (path "/518cdd36-e3d2-496e-a534-90a14dea15b3/59dda071-b627-4862-8f7d-d7d020649f72"
-          (reference "J6") (unit 1)
+          (reference "J14") (unit 1)
         )
       )
     )
@@ -722,7 +722,7 @@
           (reference "U1") (unit 1)
         )
         (path "/518cdd36-e3d2-496e-a534-90a14dea15b3/59dda071-b627-4862-8f7d-d7d020649f72"
-          (reference "U1") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -731,7 +731,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x09_Odd_Even") (at 49.53 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4e610173-26ea-435b-87d5-32da29990900)
-    (property "Reference" "J7" (at 50.8 45.72 0)
+    (property "Reference" "J13" (at 50.8 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_02x09_Odd_Even" (at 50.8 48.26 0)
@@ -764,7 +764,7 @@
     (instances
       (project "combat_2.0"
         (path "/518cdd36-e3d2-496e-a534-90a14dea15b3/59dda071-b627-4862-8f7d-d7d020649f72"
-          (reference "J7") (unit 1)
+          (reference "J13") (unit 1)
         )
       )
     )
