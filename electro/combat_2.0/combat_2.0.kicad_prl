@@ -65,7 +65,7 @@
       39,
       40
     ],
-    "visible_layers": "0015055_80000001",
+    "visible_layers": "0015055_80000000",
     "zone_display_mode": 0
   },
   "meta": {
@@ -83,7 +83,7 @@
           "pos_x": 0,
           "pos_y": 159,
           "size_x": 1938,
-          "size_y": 862
+          "size_y": 744
         }
       },
       {

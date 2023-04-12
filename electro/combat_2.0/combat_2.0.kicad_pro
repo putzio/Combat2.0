@@ -457,7 +457,7 @@
       "idf": "",
       "netlist": "./",
       "specctra_dsn": "",
-      "step": "",
+      "step": "combat_2.0.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
