@@ -73,6 +73,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "combat_2.0.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 159,
+          "size_x": 1938,
+          "size_y": 626
+        }
+      },
+      {
+        "name": "combat_2.0.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 114,
+          "size_x": 960,
+          "size_y": 789
+        }
+      }
+    ]
   }
 }

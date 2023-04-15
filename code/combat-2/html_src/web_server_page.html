@@ -90,7 +90,7 @@
         margin-top: 0px;" OnInput="updateSliderPWM(this, 'textSliderValue2')" id="pwmSlider2" min="0" max="255"
             value="%SLIDERVALUE2%" step="1" class="slider">
     </p>
-    <h3>Broń</h3>
+    <h3>Bron</h3>
     <p><span id="textSliderValue3">%SLIDERVALUE3% </span></p>
     <p>
         <input type="range" orient="horisontal" style="-webkit-appearance: slider-horizontal; 
@@ -101,10 +101,10 @@
     </p>
     <p><button type="button"><strong>Daj kurwie miodu</strong></button> <span class="dot"></span></p>
     <script>
-        document.getElementById("pwmSlider1").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
-        document.getElementById("pwmSlider2").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
-        document.getElementById("pwmSlider1").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
-        document.getElementById("pwmSlider2").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
+        // document.getElementById("pwmSlider1").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
+        // document.getElementById("pwmSlider2").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
+        // document.getElementById("pwmSlider1").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
+        // document.getElementById("pwmSlider2").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
         function updateSliderPWM(element, textSlider) {
             var sliderValue = element.value;
             document.getElementById(textSlider).innerHTML = sliderValue;
