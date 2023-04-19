@@ -83,12 +83,12 @@
           "pos_x": 0,
           "pos_y": 159,
           "size_x": 1938,
-          "size_y": 626
+          "size_y": 567
         }
       },
       {
         "name": "combat_2.0.kicad_sch",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
           "maximized": true,

@@ -8,7 +8,7 @@ _autosave*
 
 *.pdf
 /code/examples
-
+/electro/combat_2.0/.kiri/
 
 # Temporary files
 *.000
