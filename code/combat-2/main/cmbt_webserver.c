@@ -1,18 +1,20 @@
 #include "include/cmbt_webserver.h"
 #include "include/cmbt_webserver_page.h"
 
-httpd_uri_t uri_get = {.uri = "/",
+const char* TAG = "server";
+
+httpd_uri_t uri_get = { .uri = "/",
                        .method = HTTP_GET,
                        .handler = cmbt_get_req_handler,
-                       .user_ctx = NULL};
+                       .user_ctx = NULL };
 
-httpd_uri_t uri_slider1 = {.uri = "/slider1",
+httpd_uri_t uri_slider1 = { .uri = "/updatedData",
                            .method = HTTP_GET,
-                           .handler = cmbt_slider1_get_handler,
-                           .user_ctx = NULL};
+                           .handler = cmbt_updatedData_get_handler,
+                           .user_ctx = NULL };
 
-esp_err_t cmbt_slider1_get_handler(httpd_req_t *req) {
-  char *buf;
+esp_err_t cmbt_updatedData_get_handler(httpd_req_t* req) {
+  char* buf;
   size_t buf_len;
 
   buf_len = httpd_req_get_hdr_value_len(req, "Host");
@@ -20,7 +22,7 @@ esp_err_t cmbt_slider1_get_handler(httpd_req_t *req) {
     buf = malloc(buf_len);
     char param[32];
     if (httpd_req_get_hdr_value_str(req, "Host", param, sizeof(param)) ==
-        ESP_OK) {
+      ESP_OK) {
       ESP_LOGI(TAG, "header=%s", param);
     }
     free(buf);
@@ -38,7 +40,6 @@ esp_err_t cmbt_slider1_get_handler(httpd_req_t *req) {
       if (httpd_query_key_value(buf, "value", param, sizeof(param)) == ESP_OK) {
         ESP_LOGI(TAG, "Found URL query parameter => value=%s", param);
       }
-
       free(buf);
     }
   }
@@ -70,35 +71,36 @@ esp_err_t cmbt_stop_webserver(httpd_handle_t server) {
   return httpd_stop(server);
 }
 
-void cmbt_disconnect_handler(void *arg, esp_event_base_t event_base,
-                             int32_t event_id, void *event_data) {
-  httpd_handle_t *server = (httpd_handle_t *)arg;
+void cmbt_disconnect_handler(void* arg, esp_event_base_t event_base,
+  int32_t event_id, void* event_data) {
+  httpd_handle_t* server = (httpd_handle_t*)arg;
   if (*server) {
     ESP_LOGI(TAG, "Stopping webserver");
     if (cmbt_stop_webserver(*server) == ESP_OK) {
       *server = NULL;
-    } else {
+    }
+    else {
       ESP_LOGE(TAG, "Failed to stop http server");
     }
   }
 }
 
-void cmbt_connect_handler(void *arg, esp_event_base_t event_base,
-                          int32_t event_id, void *event_data) {
-  httpd_handle_t *server = (httpd_handle_t *)arg;
+void cmbt_connect_handler(void* arg, esp_event_base_t event_base,
+  int32_t event_id, void* event_data) {
+  httpd_handle_t* server = (httpd_handle_t*)arg;
   if (*server == NULL) {
     ESP_LOGI(TAG, "Starting webserver");
     *server = cmbt_start_webserver();
   }
 }
 
-esp_err_t cmbt_send_web_page(httpd_req_t *req) {
+esp_err_t cmbt_send_web_page(httpd_req_t* req) {
   int response;
   response = httpd_resp_send(req, index_html, HTTPD_RESP_USE_STRLEN);
   return response;
 }
 
-esp_err_t cmbt_get_req_handler(httpd_req_t *req) {
+esp_err_t cmbt_get_req_handler(httpd_req_t* req) {
   return cmbt_send_web_page(req);
 }
 
@@ -113,7 +115,7 @@ esp_err_t cmbt_get_req_handler(httpd_req_t *req) {
  * client to infer if the custom error handler is functioning as expected
  * by observing the socket state.
  */
-esp_err_t cmbt_http_404_error_handler(httpd_req_t *req, httpd_err_code_t err) {
+esp_err_t cmbt_http_404_error_handler(httpd_req_t* req, httpd_err_code_t err) {
   /* For any other URI send 404 and close socket */
   httpd_resp_send_err(req, HTTPD_404_NOT_FOUND, "Some 404 error message");
   return ESP_FAIL;
