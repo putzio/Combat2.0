@@ -1,5 +1,5 @@
-#ifndef WEB_SERVER_PAGE_H
-#define WEB_SERVER_PAGE_H
+#ifndef CMBT_WEBSERVER_PAGE_H
+#define CMBT_WEBSERVER_PAGE_H
 
 const char index_html[] = R"rawliteral(
 <!DOCTYPE HTML>
