@@ -36,42 +36,13 @@
             border-radius: 50%;
             display: inline-block;
         }
-
-        /* .slider {
-        -webkit-appearance: slider-vertical; 
-        margin: 70px;
-        width: 25px;
-        height: 360px;
-        background: #FFD65C;
-        outline: none;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        }
-
-        .slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 35px;
-            height: 35px;
-            background: #003249;
-            cursor: pointer;
-        }
-
-        .slider::-moz-range-thumb {
-            width: 35px;
-            height: 35px;
-            background: #003249;
-            cursor: pointer;
-        }
-
-        */
     </style>
 </head>
 
 <body>
     <h2>Pilot do Rozkurwiatora3000</h2>
-    <p><span id="textSliderValue1">%SLIDERVALUE1% </span>
-        <space><span id="textSliderValue2"> %SLIDERVALUE2%</span>
+    <p><span id="textSliderLeft">%SLIDERVALUE1% </span>
+        <space><span id="textSliderRight"> %SLIDERVALUE2%</span>
     </p>
     <h3>L | R</h3>
     <p><input type="range" orient="vertical" style="-webkit-appearance: slider-vertical; 
@@ -79,7 +50,7 @@
         width: 25px;
         height: 300px;
         margin-bottom: 0px;
-        margin-top: 0px;" OnInput="updateSliderPWM(this, 'textSliderValue1')" id="pwmSlider1" min="0" max="255"
+        margin-top: 0px;" OnInput="updateSliderPWM(this, 'textSliderLeft')" id="pwmSliderLeft" min="-255" max="255"
             value="%SLIDERVALUE1%" step="1" class="slider">
 
         <input type="range" orient="vertical" style="-webkit-appearance: slider-vertical; 
@@ -87,46 +58,48 @@
         width: 25px;
         height: 300px;
         margin-bottom: 0px;
-        margin-top: 0px;" OnInput="updateSliderPWM(this, 'textSliderValue2')" id="pwmSlider2" min="0" max="255"
+        margin-top: 0px;" OnInput="updateSliderPWM(this, 'textSliderRight')" id="pwmSliderRight" min="-255" max="255"
             value="%SLIDERVALUE2%" step="1" class="slider">
     </p>
     <h3>Bron</h3>
-    <p><span id="textSliderValue3">%SLIDERVALUE3% </span></p>
-    <p>
-        <input type="range" orient="horisontal" style="-webkit-appearance: slider-horizontal; 
-        margin: 20px;width:360px; 
-        height:25px; 
-        margin-top: 0px;" id="pwmSlider3" OnInput="updateSliderPWM(this, 'textSliderValue3')" min="0" max="255"
-            value="%SLIDERVALUE3%" step="1" class="slider">
+    <p><button type="button" onclick="toggleWeapon()"><strong>Daj kurwie miodu</strong></button> <span
+            class="dot"></span>
+        <label class="switch">
+            <input type="checkbox" id="toggleButtonWeaponOn">
+            <span class="slider round"></span>
+        </label>
     </p>
-    <p><button type="button"><strong>Daj kurwie miodu</strong></button> <span class="dot"></span></p>
+    <p><label id="output" value=0,0,0,off></label></p>
     <script>
-        // document.getElementById("pwmSlider1").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
-        // document.getElementById("pwmSlider2").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
-        // document.getElementById("pwmSlider1").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue1'); }, true);
-        // document.getElementById("pwmSlider2").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderValue2'); }, true);
+        document.getElementById("pwmSliderLeft").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderLeft'); }, true);
+        document.getElementById("pwmSliderRight").addEventListener("touchend", function (event) { ResetSliderPWM(this, 'textSliderRight'); }, true);
+        document.getElementById("pwmSliderLeft").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderLeft'); }, true);
+        document.getElementById("pwmSliderRight").addEventListener("pointerup", function (event) { ResetSliderPWM(this, 'textSliderRight'); }, true);
+        var cnt = 0;
+        setInterval(UpdateServer, 50);
+        function UpdateServer() {
+            var sliderValue1 = document.getElementById("pwmSliderLeft").value;
+            var sliderValue2 = document.getElementById("pwmSliderRight").value;
+            var weaponOn = document.getElementById("toggleButtonWeaponOn").checked;
+            var out = cnt.toString() + "," + sliderValue1.toString() + "," + sliderValue2.toString() + "," + weaponOn.toString();
+            cnt++;
+            document.getElementById("output").innerHTML = out;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/updatedData=" + out, true);
+            xhr.send();
+        }
+        function toggleWeapon() {
+            document.getElementById("toggleButtonWeaponOn").checked = !(document.getElementById("toggleButtonWeaponOn").checked);
+        }
         function updateSliderPWM(element, textSlider) {
             var sliderValue = element.value;
             document.getElementById(textSlider).innerHTML = sliderValue;
             Log(sliderValue, textSlider);
         }
         function ResetSliderPWM(element, textSlider) {
-            var sliderValue = 50;
+            var sliderValue = 0;
             element.value = sliderValue;
             document.getElementById(textSlider).innerHTML = sliderValue;
-            Log(sliderValue, textSlider);
-        }
-        function Log(sliderValue, textSlider) {
-            console.log(sliderValue);
-            var xhr = new XMLHttpRequest();
-            var id;
-            if (textSlider == "textSliderValue1") {
-                id = 1;
-            } else {
-                id = 2;
-            }
-            xhr.open("GET", "/slider" + id + "?value=" + sliderValue, true);
-            xhr.send();
         }
     </script>
 </body>
